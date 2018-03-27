@@ -1,27 +1,50 @@
 $textColor: #665f60;
 $bgColor: #ebebeb;
+@mixin social() {
+	display: inline-block;
+	height: 25px;
+	width: 25px;
+	border-radius: 50px;
+	background-color: rgba(235,235,235,.9);
+	position: relative;
+	transition: all .25s ease;
+	padding-top: 10px;
+	& svg {
 
+  			position: absolute;
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%, -50%);
+			fill: #9f9acf;;
+			
+  		}
+  		&:hover,
+		&:active,
+		&:focus {
+			opacity: 0.5;
+		}
+}
 @import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700');
 
-@font-face{
-font-family: 'ProximaNova';
-src: url('../fonts/proximanova-bold-webfont.woff2');
-font-weight: 700;
-font-style: normal;
+@font-face {
+	font-family: 'ProximaNova';
+	src: url('../fonts/proximanova-bold-webfont.woff2');
+	font-weight: 700;
+	font-style: normal;
 }
 
-@font-face{
-font-family: 'ProximaNova';
-src: url('../fonts/proximanova-reg-webfont.woff2');
-font-weight: 400;
-font-style: normal;
+@font-face {
+	font-family: 'ProximaNova';
+	src: url('../fonts/proximanova-reg-webfont.woff2');
+	font-weight: 400;
+	font-style: normal;
 }
 
-@font-face{
-font-family: 'ProximaNova';
-src: url('../fonts/proximanova-light-webfont.woff2');
-font-weight: 200;
-font-style: normal;
+@font-face {
+	font-family: 'ProximaNova';
+	src: url('../fonts/proximanova-light-webfont.woff2');
+	font-weight: 200;
+	font-style: normal;
 }
 
 body {
@@ -30,37 +53,33 @@ body {
 
 		width: 100%;
 		height: 100vh;
-		background-position: center center;
+		background-position: center ;
 		background-repeat: no-repeat;
 		background-size: cover;
 		background-image: linear-gradient(to top, rgba(159, 154, 207, 0.58) 10%, rgba(159, 154, 207, 0.6) 80%), url("../img/header-bg.jpg");
+		&:hover {
+				background-image: url("../img/header-bg.jpg");
+			}
 		.navbar {
-			padding-top: 30px;
+		}
+		.navbar-brand {
+		
+		}
+		.nav {
 
 		}
-		// .navbar-brand {
-		// 	& img {
-		// 		padding-top: 70px;
-		// 	}
-		// }
-		// .nav {
-
-		// }
 		.nav-item {
-			display: inline-block;
-			padding-top: 25px;
-			padding-right: 25px;
+			padding-right: 1%;
 		}
 		.central {
-			width: 60%;
 			position: absolute;
-			top: 50%;
-			left: 50%;
-			margin-right: -50%;
-			transform: translate(-50%, -50%);
+			top: 47%;
 			color: #fff;
-			text-align: center;
-			.display-md-4 {
+			// left: 50%;
+			// margin-right: -50%;
+			// transform: translate(-50%, -50%);
+			// text-align: center;
+			.display-md-2 {
 				letter-spacing: 2px;
 
 			}
@@ -94,7 +113,7 @@ body {
 				opacity: 1;
 				width: 100%;
 				position: absolute;
-				top: 50%;
+				top: 27%;
 				left: 50%;
 				margin-right: -50%;
 				transform: translate(-50%, -50%);
@@ -146,7 +165,6 @@ body {
 		}
 		.our-serv {
 			// background-color: #c1bfd9;
-
 			// height: 800px;
 			color: #fff;
 			background-image: linear-gradient(rgba(159, 154, 207, 0.95) 100%, rgba(159, 154, 207, 0.6) 100%), url("../img/serv.jpg");
@@ -228,12 +246,12 @@ body {
 	}
 	&__avatar {
 
-		width: 230px;
-		height: 230px;
+		width: 70%;
+		height: 70%;
 		position: absolute;
 		overflow: hidden;
 		top: -31%;
-		left: 19%;
+		left: 15%;
 		z-index: 30;
 		img {
 			width: 100%;
@@ -268,49 +286,53 @@ body {
 		padding: 0 50px 0;
 	}
 	&__sl {
-		height: 70px;
+		// height: 70px;
 		background-color: #9f9acf;
 		position: absolute;
 		bottom: 0;
 		left: 0;
 		right: 0;
+		padding-top: 20px;
 	}
 	&__sicials {
 		display: inline-block;
 		background-color: #9f9acf;
 		width: 100%;
-		margin: 0 auto;
+		margin-top: 10px;
+		margin-right: 0;
+		margin-left: 0;
+		
 	}
 	&__social {
-		width: 30px;
-  		height: 30px;
-  		display: inline-block;
-  		margin-top: 15px;
-  		margin-right: 15px;
-  		border-radius: 50%;
-  		&:hover,
-		&:active,
-		&:focus {
-			opacity: 0.5;
-		}
-  		&__hover {
-			opacity: 0.5;
-  		}
-  		&--be {
-			background-image: url("../img/behance.png");
-  		}
-  		&--in {
-			background-image: url("../img/linkedin.png");
-  		}
-  		&--gl {
-			background-image: url("../img/google.png");
-  		}
-  		&--fb {
-			background-image: url("../img/facebook.png");
-  		}
-  		&--tw {
-			background-image: url("../img/twitter.png");
-  		}
+		@include social();
+  // 		display: inline-block;
+		// height: 25px;
+		// width: 25px;
+		// border-radius: 50px;
+		// background-color: rgba(235,235,235,.9);
+		// position: relative;
+		// transition: all .25s ease;
+		// padding-top: 10px;
+
+		// // &:not(:first-of-type) {
+		// // 	margin-left: 5px;
+		// // }
+  // 		& svg {
+
+  // 			position: absolute;
+		// 	left: 50%;
+		// 	top: 50%;
+		// 	transform: translate(-50%, -50%);
+		// 	fill: #9f9acf;;
+		// 	 // color: #9f9acf;
+  // 		}
+  // 		&:hover,
+		// &:active,
+		// &:focus {
+		// 	opacity: 0.5;
+		// }
+ 
+  		
 	}
 }
 
@@ -368,6 +390,7 @@ body {
 				background-color: rgba(255, 255, 255, 0.51);
 				border-radius: 5px;
 				color: #fff;
+				outline-color: #9eace5;
 				padding-left: 55px;
 				&::placeholder {
 					color: white;
@@ -379,48 +402,50 @@ body {
 				margin-top: 10px;
 				width: 200px;
 				height: 50px;
-				outline: none;
+				border:none;
+				outline-color: #9eace5;
 				font-weight: 400;
 				text-align: center;
-				&:hover {
-					border: none;
+				&:hover,
+				&:active,
+				&:focuss {
+					opacity: 0.7;
 				}
 			}
 		}
 	}
 	.footer {
 		// width: 100%;
-		padding: 0;
+		// padding: 0;
   		background-color: #9f9acf;
-  		// padding: 6.25rem 20rem;
   		color: #fff;
   		font-family: 'PT Sans', sans-serif;
   		font-size: 0;
-  		// .container {
-  		// 	width: 100%;
-  		// }
+  		
 		&__text {
-			padding: 40px;
+			
 		    font-size: 18px;
 		    line-height: 75px;
 		    vertical-align: middle;
-		    text-align: center; 
+		    text-align: center;
+		    padding: 40px;
+		    
 		}
-		&__social {
+		&__social-cont {
 		    font-size: 1.5rem;
-		    // display: inline-block; 
-			.socials {
+		    padding-right: 40px;
+		    // margin-right: 50px;
+		}
+			&__socials {
 			    list-style-type: none;
-			    // display: inline-block;
 			    width: 100%;
 			    position: relative;
-			    // margin-left: 50px 0;
-			    padding: 50px 0;
-			    // margin-left: 20px;
-			    // text-align: center;
-			    vertical-align: middle; 
-			}
+			    // margin-right: 50px;
+			    // padding: 50px 0;
+			
 		}
+		&__social {
+		@include social();}
 	}
 }
 
