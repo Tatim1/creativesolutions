@@ -46,6 +46,25 @@ $bgColor: #ebebeb;
 	font-weight: 200;
 	font-style: normal;
 }
+// @font-face {
+// 	font-family: 'Proxima Nova Semibold';
+// 	src: url('../fonts/ProximaNova-Semibold.eot');
+// 	src: url('../fonts/ProximaNova-Semibold.eot?#iefix') format('embedded-opentype'),
+// 	url('../fonts/ProximaNova-Semibold.woff') format('woff'),
+// 	url('../fonts/ProximaNova-Semibold.ttf') format('truetype');
+// 	font-weight: normal;
+// 	font-style: normal;
+// }
+
+// @font-face {
+// 	font-family: 'Proxima Nova Bold';
+// 	src: url('../fonts/ProximaNova-Bold.eot');
+// 	src: url('../fonts/ProximaNova-Bold.eot?#iefix') format('embedded-opentype'),
+// 	url('../fonts/ProximaNova-Bold.woff') format('woff'),
+// 	url('../fonts/ProximaNova-Bold.ttf') format('truetype');
+// 	font-weight: normal;
+// 	font-style: normal;
+// }
 
 body {
 	font-family: 'ProximaNova';
@@ -61,15 +80,29 @@ body {
 				background-image: url("../img/header-bg.jpg");
 			}
 		.navbar {
+			padding: 20px 100px 0;
+			font: 20px/1 'ProximaNova', Arial, sans-serif; 
 		}
-		.navbar-brand {
+		// .fixed-top  {
+		// 	background-color: rgba(159, 154, 207, 0.6);
+		// }
+		// .fixed-top .navbar  {
+		// 	background-color: rgba(159, 154, 207, 0.6);
+				
+		// }
+		// .navbar-toggler {
+		// 	display: none;
+		// }
 		
-		}
 		.nav {
 
 		}
 		.nav-item {
-			padding-right: 1%;
+			// padding-right: 1%;
+			// letter-spacing: 2px;
+			// font-family: 'ProximaNova';
+
+
 		}
 		.central {
 			position: absolute;
@@ -79,7 +112,11 @@ body {
 			// margin-right: -50%;
 			// transform: translate(-50%, -50%);
 			// text-align: center;
+			h1 {
+				font:  60px/1 'Proxima Nova Bold', Arial, sans-serif;
+			}
 			.display-md-2 {
+			
 				letter-spacing: 2px;
 
 			}
@@ -105,10 +142,10 @@ body {
 			&:hover {
 				background-image: url("../img/man.jpg");
 			}
-			&:hover > .about {
-				opacity: 0;
-				transition: 1s;
-			}
+			// &:hover > .about {
+			// 	opacity: 0;
+			// 	transition: 1s;
+			// }
 			.about {
 				opacity: 1;
 				width: 100%;
@@ -165,9 +202,9 @@ body {
 		.darker {
 			background-color: #dbdbdb;
 		}
-		.col-md-4 {
-			height: 800px;
-		}
+		// .col-md-4 {
+		// 	height: 800px;
+		// }
 		.our-serv {
 			height: 800px;
 			color: #fff;
@@ -246,7 +283,7 @@ body {
 		}
 
 	&__card {
-		 // margin-top: 20px;
+		
 		position: relative;
 	}
 	&__avatar {
@@ -291,7 +328,7 @@ body {
 		padding: 0 50px 0;
 	}
 	&__sl {
-		// height: 70px;
+		
 		background-color: #9f9acf;
 		position: absolute;
 		bottom: 0;
@@ -309,7 +346,9 @@ body {
 		
 	}
 	&__social {
+
 		@include social();
+		margin-right: 15px;
   		
 	}
 }
@@ -393,8 +432,7 @@ body {
 		}
 	}
 	.footer {
-		// width: 100%;
-		// padding: 0;
+		
   		background-color: #9f9acf;
   		color: #fff;
   		font-family: 'PT Sans', sans-serif;
@@ -412,18 +450,17 @@ body {
 		&__social-cont {
 		    font-size: 1.5rem;
 		    padding-right: 40px;
-		    // margin-right: 50px;
+		    
 		}
 			&__socials {
 			    list-style-type: none;
 			    width: 100%;
 			    position: relative;
-			    // margin-right: 50px;
-			    // padding: 50px 0;
-			
+			   
 		}
 		&__social {
-		@include social();}
+		@include social();
+		}
 	}
 }
 

@@ -7,6 +7,10 @@
 	<meta name="keywords" content="">
 	<meta name="description" content="">
 	<link rel="shortcut icon" href="favicon.png">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
 	<title>creative</title>
 	<link rel="stylesheet" href="css/styles.min.css">
 
@@ -20,46 +24,42 @@
 <body>
 	<header class="header">
 		<div class="container">
-			<div class="row navbar align-items-center ">
-				<div class="col-md-2 justify-content-center  ">
-			<!-- <div class="navbar row justify-content-between"> -->
-
-					<a href="#home" class="navbar-brand scrollTo">
-						<svg width="40%" height="40%">
-							<use xlink:href="#logo"></use>
-						</svg>
-					</a>
+			<nav class="navbar  navbar-dark bg-faded navbar-expand-lg fixed-top">
+  				<a class="navbar-brand" href="#">
+  					<svg width="70" height="80">
+						<use xlink:href="#logo"></use>
+					</svg>
+				</a>
+				<button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                	<span class="navbar-toggler-icon"></span>
+            	</button>
+ 			 	<div class="collapse navbar-collapse" id="navbarCollapse">
+					<ul class="navbar-nav ml-auto">
+                    	<li class="navbar-item">
+    						<a class=" nav-link scrollTo text-uppercase font-weight-bold " href="#home">Home</a>
+    					</li>
+    					<li class="navbar-item">
+    						<a class=" nav-link scrollTo text-uppercase font-weight-bold" href="#about">About</a>
+    					</li>
+						<li class="navbar-item">
+    						<a class="nav-link scrollTo text-uppercase font-weight-bold" href="#services">Services</a>
+    					</li>
+    					<li class="navbar-item">
+    					  	<a class="nav-link scrollTo text-uppercase font-weight-bold" href="#works">Works</a>
+    					</li>
+    					<li class="navbar-item">
+    					  	<a class="nav-link scrollTo text-uppercase font-weight-bold" href="#contact">Contact</a>
+    					</li>
+    				</ul>
 				</div>
-				<div class="col-md-10  " >
-					<a href="#" class="toggle-nav"></a>
-					<ul class="nav list-inline text-right">
-					  <li class="nav-item list-inline-item">
-						<a class="nav-link scrollTo disabled text-uppercase font-weight-bold" href="#home">Home</a>
-					  </li>
-					  <li class="nav-item list-inline-item">
-						<a class="nav-link scrollTo active text-uppercase font-weight-bold" href="#about">About</a>
-					  </li>
-					  <li class="nav-item list-inline-item">
-						<a class="nav-link scrollTo active text-uppercase font-weight-bold" href="#services">Services</a>
-					  </li>
-					  <li class="nav-item list-inline-item">
-						<a class="nav-link scrollTo active text-uppercase font-weight-bold" href="#works">Works</a>
-					  </li>
-					   <li class="nav-item list-inline-item">
-						<a class="nav-link scrollTo active text-uppercase font-weight-bold" href="#contact">Contact</a>
-					  </li>
-					</ul>
-				</div>
-			</div>
+			</nav>
 		</div>
-		<!-- <div class="container"> -->
-			<div class="row">
+		<div class="row">
 			<div class="col-md-10 offset-md-1 central text-center">
 				<h1 class="display-md-2 text-uppercase font-weight-bold">Creative digital project</h1>
 				<p class="font-italic display-md-2">Duis mollis, est non commodo luctus,<br>
  				nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
 			</div>
-		<!-- </div> -->
 		</div>
 		</div>
 	</header>
@@ -199,28 +199,28 @@
 								<span class="team__position">CEO & Founder</span>
 								<div class="team__sl">
     								<ul class="team__socials justify-content-center">
-    								  <li class="team__social  team__social--in">
+    								  <li class="team__social">
     								  	<a href="#">
     								  		<svg width="70%" height="70%">
 												<use xlink:href="#linkedin"></use>
 											</svg>
     								  	</a>
     								  </li>
-    								  <li class="team__social team__social--gl">
+    								  <li class="team__social">
     								  	<a href="#">
     								  		<svg width="70%" height="70%">
 												<use xlink:href="#google"></use>
 											</svg>
     								  	</a>
     								  </li>
-    								  <li class="team__social team__social--fb">
+    								  <li class="team__social">
     								  	<a href="#">
     								  		<svg width="70%" height="70%">
 												<use xlink:href="#facebook"></use>
 											</svg>
     								  	</a>
     								  </li>
-    								  <li class="team__social team__social--tw">
+    								  <li class="team__social">
     								  	<a href="#">
     								  		<svg width="70%" height="70%">
 												<use xlink:href="#twitter"></use>
@@ -241,36 +241,36 @@
 								<span class="team__name">Jackie Carroll</span>
 								<span class="team__position">Art Director</span>
 								<div class="team__sl">
-									<ul class="team__socials">
-    								  <li class="team__social team__social--be">
+									<ul class="team__socials row justify-content-between">
+    								  <li class="team__social">
     								  	<a href="#">
     								  		<svg width="70%" height="70%">
 												<use xlink:href="#behance"></use>
 											</svg>
     								  	</a>
     								  </li>
-    								  <li class="team__social team__social--in">
+    								  <li class="team__social">
     								  	<a href="#">
     								  		<svg width="70%" height="70%">
 												<use xlink:href="#linkedin"></use>
 											</svg>
     								  	</a>
     								  </li>
-    								  <li class="team__social team__social--gl">
+    								  <li class="team__social">
     								  	<a href="#">
     								  		<svg width="70%" height="70%">
 												<use xlink:href="#google"></use>
 											</svg>
     								  	</a>
     								  </li>
-    								  <li class="team__social team__social--fb">
+    								  <li class="team__social">
     								  	<a href="#">
     								  		<svg width="70%" height="70%">
 												<use xlink:href="#facebook"></use>
 											</svg>
     								  	</a>
     								  </li>
-    								  <li class="team__social team__social--tw">
+    								  <li class="team__social">
     								  	<a href="#">
     								  		<svg width="70%" height="70%">
 												<use xlink:href="#twitter"></use>
@@ -290,36 +290,37 @@
 							<div class="team__body">
 								<span class="team__name">Art Director</span>
 								<span class="team__position">Designer</span>
-								<div class="team__sl"><ul class="team__socials">
-    								  <li class="team__social team__social--be">
+								<div class="team__sl">
+									<ul class="team__socials">
+    								  <li class="team__social">
     								  	<a href="#">
     								  		<svg width="70%" height="70%">
 												<use xlink:href="#behance"></use>
 											</svg>
     								  	</a>
     								  </li>
-    								  <li class="team__social team__social--in">
+    								  <li class="team__social">
     								  	<a href="#">
     								  		<svg width="70%" height="70%">
 												<use xlink:href="#linkedin"></use>
 											</svg>
     								  	</a>
     								  </li>
-    								  <li class="team__social team__social--gl">
+    								  <li class="team__social">
     								  	<a href="#">
     								  		<svg width="70%" height="70%">
 												<use xlink:href="#google"></use>
 											</svg>
     								  	</a>
     								  </li>
-    								  <li class="team__social team__social--fb">
+    								  <li class="team__social">
     								  	<a href="#">
     								  		<svg width="70%" height="70%">
 												<use xlink:href="#facebook"></use>
 											</svg>
     								  	</a>
     								  </li>
-    								  <li class="team__social team__social--tw">
+    								  <li class="team__social">
     								  	<a href="#">
     								  		<svg width="70%" height="70%">
 												<use xlink:href="#twitter"></use>
@@ -398,41 +399,41 @@
       <div class="col-md-6 footer__text">©2014 <span class="font-weight-bold">tulus</span>driyo. All Rights Reserved.</div>
       <div class="footer__social-cont col-md-3">
         <ul class="socials d-flex  row justify-content-between">
-          <li class="footer__social team__social--be">
-    								  	<a href="#">
-    								  		<svg width="70%" height="70%">
-												<use xlink:href="#behance"></use>
-											</svg>
-    								  	</a>
-    								  </li>
-    								  <li class="team__social team__social--in">
-    								  	<a href="#">
-    								  		<svg width="70%" height="70%">
-												<use xlink:href="#linkedin"></use>
-											</svg>
-    								  	</a>
-    								  </li>
-    								  <li class="team__social team__social--gl">
-    								  	<a href="#">
-    								  		<svg width="70%" height="70%">
-												<use xlink:href="#google"></use>
-											</svg>
-    								  	</a>
-    								  </li>
-    								  <li class="team__social team__social--fb">
-    								  	<a href="#">
-    								  		<svg width="70%" height="70%">
-												<use xlink:href="#facebook"></use>
-											</svg>
-    								  	</a>
-    								  </li>
-    								  <li class="team__social team__social--tw">
-    								  	<a href="#">
-    								  		<svg width="70%" height="70%">
-												<use xlink:href="#twitter"></use>
-											</svg>
-    								  	</a>
-    								  </li>
+          <li class="footer__social">
+    	 	<a href="#">
+    	  		<svg width="70%" height="70%">
+					<use xlink:href="#behance"></use>
+				</svg>
+    	  	</a>
+    	  </li>
+    	  <li class="team__social ">
+    	  	<a href="#">
+    	  		<svg width="70%" height="70%">
+					<use xlink:href="#linkedin"></use>
+				</svg>
+    	  	</a>
+    	  </li>
+    	  <li class="team__social ">
+    	  	<a href="#">
+    	  		<svg width="70%" height="70%">
+					<use xlink:href="#google"></use>
+				</svg>
+    	  	</a>
+    	  </li>
+    	  <li class="team__social ">
+    	  	<a href="#">
+    	  		<svg width="70%" height="70%">
+					<use xlink:href="#facebook"></use>
+				</svg>
+    	  	</a>
+    	  </li>
+    	  <li class="team__social">
+    	  	<a href="#">
+    	  		<svg width="70%" height="70%">
+					<use xlink:href="#twitter"></use>
+				</svg>
+    	  	</a>
+    	  </li>
         </ul>
       </div>
     </div>	
@@ -536,7 +537,7 @@
 	
 
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
 	<!-- Include all compiled plugins (below), or include individual files as needed -->
 	<script src="js/scripts.min.js"></script>
 	 <script async defer
